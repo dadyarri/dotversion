@@ -2,6 +2,10 @@
 
 Dotversion is an application to increase version of .NET applications according to [SemVer](https://semver.org)
 
+It automatically finds a `*.csproj` file in specified directory, reads current version from it, increases version as specified, and (if `-s` wasn't passed) writes it back.
+
+## Help message
+
 ```
 ❯ dotversion --help
 dotversion: Utility to increase versions of dotnet's projects according to SemVer (https://semver.org).
