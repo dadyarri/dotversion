@@ -82,13 +82,13 @@ jobs:
       matrix:
         include:
           - os: ubuntu-latest
-            asset_name_suffix: linux.tar.gz
+            asset_name_suffix: dotversion-linux.tar.gz
             asset_content_type: application/gzip
           - os: windows-latest
-            asset_name_suffix: windows.zip
+            asset_name_suffix: dotversion-windows.zip
             asset_content_type: application/zip
           - os: macOS-latest
-            asset_name_suffix: macos.tar.gz
+            asset_name_suffix: dotversion-macos.tar.gz
             asset_content_type: application/gzip
     steps:
       - uses: actions/download-artifact@v2
